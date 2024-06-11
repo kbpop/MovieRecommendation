@@ -1,0 +1,14 @@
+
+    .clipped-image {
+      position: relative;
+      overflow: hidden;
+      max-height: 300px; /* Set your desired max height here */
+    }
+    .clipped-image img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      clip-path: inset(0 0 calc(100% - 300px) 0); /* Clipping the bottom part */
+    }
